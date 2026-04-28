@@ -7,3 +7,5 @@
 # Vi-key
 Visual key, for our internal needs to manage Keyboard Maestro's keyboard shortcut combinations
 Related with this [digital assets](https://github.com/imhicihu/Automation/tree/master/Keyboard_Maestro)
+
+### Rationale / [Motivación](LEEME.md)
