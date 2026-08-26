@@ -24,7 +24,7 @@ As such, it was programmed to meet those objectives. The code is available [here
 
 ### Code of Conduct
 
-* Please, check our [Code of Conduct](code_of_conduct.md)
+* Please, check our [Code of conduct](code_of_conduct.md)
 
 ### Legal
 
