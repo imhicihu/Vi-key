@@ -14,7 +14,7 @@
 
 Vi-key is a tool primarily for our internal use, designed to quickly search for Keyboard Maestro keyboard shortcut combinations that we’ve created to automate repetitive tasks. This development is closely related to these [digital resources](https://github.com/imhicihu/Automation/tree/master/Keyboard_Maestro).
 From the very beginning, the application was designed to meet certain criteria: it had to be transparent, minimalist, use minimal memory, be monochromatic, omnipresent, and non-intrusive to any running programs.
-As such, it was programmed to meet those objectives. The code is available [here](/code) and is uncompiled. Install [Electron Fiddle](https://www.electronjs.org/fiddle). Then copy and paste the code previously downloaded on `Fiddle` accordingly. This is the result:
+As such, it was programmed to meet those objectives. The code is available [here](/code) and is uncompiled. Install [Electron Fiddle](https://www.electronjs.org/fiddle). Then [copy and paste](/code/code.md) the code previously downloaded on `Fiddle` accordingly. This is the result:
 
 ![screenshot](images/Screenshot_2026-08-26_at_2.10.18_PM.png)
 
