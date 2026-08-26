@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de atajos de teclado</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif, futura, arial;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .search-box {
+            position: relative;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
+        input[type="text"]:focus {
+            border-color: #0066cc;
+        }
+        kbd {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #eee;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #666;
+            border: 1px solid #ccc;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Atajos</h2>
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Buscar...">
+        <kbd>⌘K</kbd>
+    </div>
+
+    <h4>Resultados:</h4>
+    <ul id="results-list">
+        <li>Uploading databases repositorio - Shift+F2</li>
+        <li>Deleting from Trash - ⌘F2</li>
+        <li>Convertir MAYUSCULAS a Mayúsculas - ⌘4</li>
+        <li>Discriminando pdfs en carpetas - F2</li>
+        <li>Generar enlace en markdown - ..e</li>
+        <li>Pull request GitHub - ⌘9<li>
+        <li><li>
+        <li><li>
+    </ul>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const kbdTag = document.querySelector('kbd');
+
+        // Hide kbd hint when input is focused or typed in
+        searchInput.addEventListener('focus', () => kbdTag.style.display = 'none');
+        searchInput.addEventListener('blur', () => {
+            if (!searchInput.value) kbdTag.style.display = 'block';
+        });
+
+        // Listen for keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Check for Cmd+K (Mac) or Ctrl+K (Windows)
+            if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+                e.preventDefault(); // Stop browser default behavior
+                searchInput.focus();
+            }
+            // Check for '/' key when not already inside an input/textarea
+            if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+                e.preventDefault();
+                searchInput.focus();
+            }
+        });
+
+        // Basic filter functionality
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const items = document.querySelectorAll('#results-list li');
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(query) ? '' : 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>
