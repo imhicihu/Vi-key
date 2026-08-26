@@ -15,3 +15,19 @@ From the very beginning, the application was designed to meet certain criteria: 
 As such, it was programmed to meet those objectives. The code is available [here](/code) and is uncompiled. Install [Electron Fiddle](https://www.electronjs.org/fiddle). Then copy and paste the code previously downloaded on `Fiddle` accordingly. This is the result:
 
 ![screenshot](images/Screenshot_2026-08-26_at_2.10.18_PM.png)
+
+
+> [!NOTE]
+> This code can be run in the Windows, Linux and MacOS environments
+
+### Code of Conduct
+
+* Please, check our [Code of Conduct](code_of_conduct.md)
+
+### Legal
+
+* All trademarks are the property of their respective owners
+
+### Licence
+
+* The content of this project itself is licensed under the ![MIT Licence](images/2049852260-MIT-license-green.png)
