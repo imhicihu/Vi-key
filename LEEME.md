@@ -18,6 +18,9 @@ Como tal, fue programada para cumplir con dichos objetivos. El código se encuen
 
 ![screenshot](images/Screenshot_2026-08-26_at_2.10.18_PM.png)
 
+> [!NOTE]
+> Este código se puede ejecutar en Windows, Linux y macOS
+
 ### Código de conducta
 
 * Por favor, consulta nuestro [Código de conducta](codigo_de_conducta.md)
