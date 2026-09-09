@@ -22,7 +22,7 @@ https://gist.github.com/62f402d4d29f5d81f0ebb973652715a2
 ```
 > Valid until December, 8, 2026
 
-This is the result:
+#### Result:
 
 ![screenshot](images/Screenshot_2026-08-26_at_2.10.18_PM.png)
 
